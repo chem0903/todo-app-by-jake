@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+
+body {
+  font-family: sans-serif;
+  color: #666;
+  /* border: 1px solid black; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+  padding: 6px 16px;
+  border-radius: 8px; 
+  border: none;
+  /* border: 1px solid black; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  padding: 4px 16px;
+  margin: 0px 2px;
+  border-radius: 8px;
+  border: none;
+  /* border: 1px solid black; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button:hover {
+  background-color: #79a8a9;
+  color: #fff;    /*#ffffffの省略形*/
+  cursor: pointer;    /*マウスカーソルの形*/
+}   /* hober：カーソルが要素上に乗った時どのような変化を示すか */
+
+.inputArea {
+  background-color: #c6e5d9;
+  padding: 8px;
+  margin: 8px;
+  width: 400px;
+  height: 30px;
+  border-radius: 8px;    /*boderを指定した半径で丸める*/
+  /* border: 1px solid black; */
 }
 
-.App-link {
-  color: #61dafb;
+.incompleteArea {
+  background-color: #fff;
+  padding: 8px;
+  margin: 8px;
+  width: 400px;
+  min-height: 200px;  /*最小高さ。要素の高さが動的に変化する場合に有効*/
+  border-radius: 8px;
+  border: 2px solid #aacfd0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.completeArea {
+  background-color: #c9dede;
+  padding: 8px;
+  margin: 8px;
+  width: 400px;
+  min-height: 200px;  /*最小高さ。要素の高さが動的に変化する場合に有効*/
+  border-radius: 8px;
+  border: 2px solid #aacfd0;
+}
+
+.title {
+  text-align: center;  /*中央寄せ*/
+  margin-top: 0px;
+  border: none;
+  font-weight: bold;  /*太字*/
+  /* border: 1px solid black; */
+}
+
+.listLow {
+  display: flex; /* 要素を横並びに */
+  align-items: center;    /* 中央揃え */
+  /* border: 1px solid black; */
+}
+
+.todoItem {
+  margin: 6px;
+  /* border: 1px solid black; */
 }
