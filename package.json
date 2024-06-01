@@ -18,7 +18,7 @@
     "eject": "react-scripts eject",
     "deploy": "rm -rf docs && npm run build && mv build docs"
   },
-  "homepage": "https://chem0903.github.io/todo-app-by-jake",
+  "homepage": "https://chem0903.github.io/u-todo-with-react",
   "eslintConfig": {
     "extends": [
       "react-app",

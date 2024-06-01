@@ -22,12 +22,11 @@ function App() {
 
   const completeTask = (index) => {
     const newIncompleteTasks = [...incompleteTasks];
-    console.log(newIncompleteTasks);
     const completedTask = newIncompleteTasks.splice(index, 1);
-    console.log(newIncompleteTasks);
-    console.log(completedTask);
+
     const newCompleteTasks = [...completeTasks];
     newCompleteTasks.push(completedTask.join(""));
+
     setIncompleteTasks(newIncompleteTasks);
     setCompleteTasks(newCompleteTasks);
   };
@@ -35,10 +34,11 @@ function App() {
   const returnTask = (index) => {
     const newCompleteTasks = [...completeTasks];
     newCompleteTasks.splice(index, 1);
+
     const newIncompleteTasks = [...incompleteTasks, completeTasks[index]];
+
     setIncompleteTasks(newIncompleteTasks);
     setCompleteTasks(newCompleteTasks);
-    console.log(newIncompleteTasks);
   };
 
   return (
